@@ -1,0 +1,453 @@
+/* Base */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Typography */
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* Start of Page- Topbar */
+.topbar{
+  background-color:#13233C;
+  color:white;
+  height: 80px;
+  padding-top:20px;
+  position: relative;
+  border-bottom: solid 0.5px rgb(80, 84, 100);
+}
+
+.logo{
+  padding-left: 50px;
+  position: absolute;
+  top:20px;
+} 
+
+/*Big screen menu*/
+.menuB{
+  padding-top: 10px;
+  text-align: center;
+  padding-left: 80px;
+  color: white;
+}
+
+.menuoptions{
+  padding-left:50px;
+  display: inline;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/*Small screen menu*/
+.button{
+  text-decoration: none;
+  color: grey;
+  padding: 10px;
+  background-color: #13233C;
+  margin: 10px 0 10px 10px;
+  border-radius: 5px;
+  float: right;
+}
+
+.menu-container{
+    display: none;
+}
+
+.menu{
+  list-style: none;
+  padding: 0;
+  max-width: 200px;
+  float: right;
+}
+
+.menu a{
+  background-color: #13233C;
+  border-bottom: 1px solid rgba(255,255,255,.4);
+  padding: 10px;
+  display: list-item;
+  color: white;
+  text-decoration: none;
+  transition: all .3s;
+  
+}
+
+.menu a:hover{
+  background-color: lightgrey;
+  color: grey;
+}
+
+h1{
+padding-left: 50px;
+}
+
+/*sign up box*/
+.boxtopbar{
+ padding-left: 10px;
+ padding-right: 10px;
+ padding-top: 4px;
+ font-weight: bold;
+  width: 90px;
+  height: 40px;
+  background-color:#2398D3;
+  border-radius: 5px;
+  position: absolute;
+  right: 40px;
+  top:20px;
+}
+
+
+/*media query for large screen view*/
+@media (max-width:700px){
+  .menuoptions{
+    display: none;
+  }
+}
+
+/*media query for sign up box*/
+
+@media (max-width:700px) {
+  .boxtopbar{
+    display: none;
+  }
+}
+
+/*media query for menu on small screen*/
+@media(min-width:700px){
+  .smallmenu{
+    display:none;
+  }
+}
+
+
+/*End of Topbar Section */
+
+/*Start of Section1 */
+
+.section1{
+  background-color: #13233C;
+  display: flex;
+  padding-left:50px;
+}
+
+.text{
+  text-align: left;
+  order: 1;
+  display: block;
+  width: 50%;
+  padding-bottom: 20px;
+}
+
+.text1{
+  
+  padding-top: 200px;
+  font-weight: bold;
+  color: white;
+  font-size: 50px;
+}
+
+.text2{
+  color: grey;
+  font-size: 25px;
+  
+}
+
+/*Text in regards to downloads on app and android */
+.text3{
+  color:  rgb(80, 84, 100);
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.images1{
+ padding-top: 0px;
+ padding-bottom: 0px;
+  float:right;
+  display: block;
+  order: 2;
+  width: 50%;
+}
+
+.images1mob {
+display:none;
+}
+
+/*Media query for mobile view*/
+@media (max-width: 700px) {
+  .section1{
+    display:block;
+  }
+  .text, .images1{
+    width: auto;
+  }
+}
+
+@media (max-width:700px){
+  .images1{
+display: none;
+  }
+  .images1mob{
+    display: inline-block;
+  }
+}
+/*End of section 1*/
+
+/*Start of Section 2*/
+
+.section2{
+  display: flex;
+  padding-top: 140px;
+  background-color:#FFFFFF;
+  padding-bottom: 50px;
+}
+
+.section2left{
+display: block;
+align-content: left;
+order:1;
+width:50%;
+}
+
+h1{
+  font-weight: bold;
+}
+
+.section2text{
+  padding-left:50px;
+  padding-top:50px;
+  font-size: 20px;
+  position: relative;
+}
+
+.imageS2{
+  display: inline-block;
+position: absolute;
+}
+
+.titleS2{
+  font-weight: bold;
+  font-size: 40px;
+  padding-left:50px;
+}
+
+.section2right{
+  display:block;
+  order:2;
+  align-items: right;
+  width:50%;
+}
+
+/*Media query for mobile view*/
+@media (max-width: 700px) {
+  .section2{
+    display:block;
+  }
+  .section2left, .section2right{
+    width: auto;
+  }
+}
+
+/*End of Section 2*/
+
+/*Start of Section 3*/
+/*Start of Section 3- Main*/
+
+.section3{
+  background-image: url(../img/images/images/images-current-account/current-account.jpg);
+  background-size: cover;
+  text-align: left;
+  
+  background-position:center center;
+  min-height: 700px;
+}
+.textS3{
+ align-items: right;
+}
+
+.textS3title {
+  padding-top:200px;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+ padding-left:50px;
+}
+
+.textS3main{
+  font-size: 20px;
+  color: white;
+  padding-left:50px;
+}
+/*End of Section 3- Main*/
+
+/*Start of Section 3(boxes)*/
+
+/*First row of boxes*/
+.section3box{
+ padding-bottom: 20px;
+  color:#F3F3F3;
+  display:flex;
+}
+
+.box1{
+  top: 200px;
+  width: 50%;
+  background-color:#FFFFFD;
+  border-radius: 10px;
+  margin-left:25px;
+  margin-right:25px;
+  padding-top:20px;
+  padding-bottom: 10px;
+  display: inline-flex;
+  order: 1;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  
+}
+
+.textinbox{
+  text-align: left;
+font-size: 30px;
+padding-bottom: 10px;
+}
+
+.textheader{
+color: black;
+font-weight: bold;
+
+}
+
+.textwriting{
+  color: black;
+  text-align: left;
+  font-size: 20px;;
+}
+
+.img4box{
+  float:right;
+  padding-top: 40px;  
+}
+
+
+
+.box2{
+  width: 50%;
+  background-color:#FFFFFD;
+  border-radius: 10px;
+  margin-left:25px;
+  margin-right:25px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  display: inline-flex;
+  order: 2;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/*The change to mobile view for boxes*/
+
+@media (max-width: 700px) {
+  .section3box{
+    display:block;
+  }
+  .box1, .box2{
+    width: auto;
+  }
+}
+
+/*Second row of boxes*/
+
+.section3boxb{
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.box3{
+  width: 50%;
+  background-color:#FFFFFD;
+  border-radius: 10px;
+  margin-left:25px;
+  margin-right:25px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  display: inline-flex;
+  order: 1;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.box4{
+  width: 50%;
+  background-color:#FFFFFD;
+  border-radius: 10px;
+  margin-left:25px;
+  margin-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  display: inline-flex;
+  order: 2;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/*The change to mobile view for boxes (second row)*/
+@media (max-width: 700px) {
+  .section3boxb{
+    display:block;
+  }
+  .box3, .box4{
+    width: auto;
+  }
+}
+/*End of Section 3 boxes*/
+
+/*Beginning of Footer*/
+.footer{
+  background-color:#11213A;
+  display: block;
+  padding-left: 50px;
+}
+
+.logofooter{
+  padding-top:50px;
+  display: inline-block;
+  padding-bottom: 50px;
+  padding-right: 60px;
+  padding-left: 10px;
+}
+
+
+.footertext{
+  color:white;
+  display: inline-block;
+  padding-top: 30px;
+  text-align: center;
+  padding-right: 80px;
+}
+
+.footertext1{
+  padding-right: 30px;
+  padding-left:40px;
+  font-size: 18px;
+  display: inline-block;
+ 
+  
+}
+
+.footericons{
+  margin-right:30px;
+  padding:10px 10px;
+  border-radius:10px;
+  background-color: #3E4C60;
+display: inline-block;
+  
+}
+
+.footericonss{
+  padding-top:50px;
+  float:right;
+  padding-right: 50px
+}
+
+/*End of Footer*/
+
+/* … */
